@@ -22,6 +22,6 @@ document.querySelector(".parent-container").addEventListener("click", (e) => {
     const appName = e.target.alt.replace(/ /g, "-").toLowerCase();
     const appLink = e.target.closest(".each-app").querySelector("a").href;
     console.log(appLink);
-    window.open(appLink, "_top");
+    window.open(appLink, "_blank");
   }
 });
