@@ -17,11 +17,18 @@ document
   });
 
 document.querySelector(".parent-container").addEventListener("click", (e) => {
+  // if the target is an image, open the link
   if (e.target.tagName === "IMG") {
-    // if the target is an image, open the link
-    const appName = e.target.alt.replace(/ /g, "-").toLowerCase();
+    // get the link from the closest parent with class "each-app"
     const appLink = e.target.closest(".each-app").querySelector("a").href;
     console.log(appLink);
     window.open(appLink, "_blank");
   }
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("img").forEach((img) => {
+    console.log(img.alt);
+    img.src = `./assets/${img.alt}.gif`;
+  });
 });
