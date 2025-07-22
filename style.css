@@ -28,6 +28,9 @@ body {
 
     text-underline-offset: 0.6rem;
   }
+  @media (max-width: 1000px) {
+    font-size: 3rem;
+  }
 }
 span {
   color: #ff0000;
@@ -70,6 +73,9 @@ a {
   }
   &:visited {
     color: #1d4ed8; /* blue-700 */
+  }
+  @media (max-width: 1000px) {
+    font-size: 1.8rem;
   }
 }
 
