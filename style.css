@@ -17,19 +17,16 @@ body {
 .heading {
   color: rgb(1, 149, 1);
   color: darkgreen;
-
   cursor: pointer;
-
   margin-top: 1.2rem;
   &:hover {
     text-decoration: underline;
-
     cursor: pointer;
-
     text-underline-offset: 0.6rem;
   }
   @media (max-width: 1000px) {
-    font-size: 3.8rem;
+    font-size: 1.5rem;
+    margin-bottom: 0rem;
   }
 }
 span {
@@ -75,15 +72,15 @@ a {
     color: #1d4ed8; /* blue-700 */
   }
   @media (max-width: 1000px) {
-    font-size: 2.5rem;
+    font-size: 1.1rem;
   }
 }
 
-#cursor-label {
+/* #cursor-label {
   position: fixed;
   top: -9999px;
-  left: -9999px; /* initial position */
-  transform: translate(-55%, 50%); /* center above the pointer */
+  left: -9999px; 
+  transform: translate(-55%, 50%);
   font-size: 14px;
   font-family: sans-serif;
   color: #333;
@@ -93,4 +90,4 @@ a {
   white-space: nowrap;
   z-index: 9999;
   transition: transform 0.05s ease-out;
-}
+} */
